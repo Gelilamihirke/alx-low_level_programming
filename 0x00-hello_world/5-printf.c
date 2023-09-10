@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main  tis is a print function
  * Return: 0
  */
 int main(void)
