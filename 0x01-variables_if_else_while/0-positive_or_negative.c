@@ -1,9 +1,14 @@
+#include <stdlib.h>
 #include <time.h>
+/* more headers goes there */
+#include <stdio.h>
+/* betty style doc for function main goes there */
 /**
  * main - generate random numbers to detect -ve or +ve
  * Return: always(0)
  *
  */
+
 int main(void)
 {
 	int n;
@@ -12,15 +17,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d is posetive\n", n);
+		printf("%d is posetive", n);
 	}
 	else if (n == 0)
 	{
-		printf("%d is zero\n", n);
+		printf("%d is zero", n);
 	}
 	else
 	{
-		printf("%D is negative\n", n);
+		printf("%d is negative", n);
 	}
 	return (0);
 }
