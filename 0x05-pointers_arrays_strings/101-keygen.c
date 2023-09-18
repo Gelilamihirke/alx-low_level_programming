@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char password(84);
+	char password[84];
 	int index = 0;
 	int sum = 0;
 	int diff_half1;
