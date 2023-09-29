@@ -3,13 +3,13 @@
  * sqrt_a - return the natural num
  * @a: input num
  * @b: iterator
- * Return: square root
+ * Return: square root or -1
  */
 int sqrt_a(int a, int b)
 {
 	if (b * b == a)
 		return (b);
-	else if (b * b > 4)
+	else if (b * b > a)
 		return (-1);
 	return (sqrt_a(a, b + 1));
 }
