@@ -10,36 +10,26 @@ int main(int argc, char *argv[])
 {
 	int cent, coin = 0;
 
-	if (argc > 2 || argc == 1)
+	if (argc == 1 || argc > 2)
 	{
 		printf("error\n");
 		return (1);
 	}
 	cent = atoi(argv[1]);
+
 	while (cent > 0)
 	{
-		coin++;
-		if ((cent - 25) >= 0)
-		{
+		if (cent >= 25)
 			cent -= 25;
-			continue;
-		}
-		if ((cent - 10) >= 0)
-		{
+		else if (cent >= 10)
 			cent -= 10;
-			continue;
-		}
-		if ((cent - 5) >= 0)
-		{
+		else if (cent >= 5)
 			cent -= 5;
-			continue;
-		}
-		if ((cent - 2) >= 0)
-		{
+		else if (cent >= 2)
 			cent -= 2;
-			continue;
-		}
-		cent--;
+		else if (cent >= 1)
+			cent -= 1;
+		coin += 1;
 	}
 	printf("%d\n", coin);
 	return (0);
