@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int cent, coin = 0;
 
-	if (argc != 2)
+	if (argc > 2 || argc == 1)
 	{
 		printf("error\n");
 		return (1);
