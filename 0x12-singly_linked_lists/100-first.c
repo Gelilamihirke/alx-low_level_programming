@@ -1,7 +1,7 @@
 #include "lists.h"
 void ComeFirstbyCTC(void)__attribute__ ((constructor));
 /**
- * ComeFirst - ...
+ * ComeFirstbyCTC - ...
  */
 void ComeFirstbyCTC(void)
 {
