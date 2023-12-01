@@ -65,22 +65,4 @@ int main(int argc, char *argv[])
 	close_files(src_fd, dest_fd);
 	exit(EXIT_SUCCESS);
 }
-/**
- * close_files - ...
- * @src_fd: ...
- * @dest_fd: ...
- * Return: ...
- */
-void close_files(int src_fd, int dest_fd)
-{
-	if (close(src_fd) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", src_fd);
-		exit(CLOSE_ERROR);
-	}
-	if (close(dest_fd) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dest_fd);
-		exit(CLOSE_ERROR);
-	}
-}
+
